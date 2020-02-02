@@ -1,42 +1,35 @@
 import * as React from 'react';
 
-type Props = {
-    name: string;
-};
+type Props = {};
 type State = {
-    count: number;
+    field: string;
 };
 
-class Hello extends React.Component<Props, State> {
+class InputText extends React.Component<Props, State> {
     constructor(props: any) {
         super(props);
         this.state = {
-            count: 0
+            field: ''
         };
-        this.sayHello.bind(this);
+        this.onInput.bind(this);
     }
 
-    sayHello(event: any) {
-        console.log(event);
-        this.setState({ count: this.state.count + 1 });
-        alert(`Hello  ${this.state.count} ${this.props.name}`);
+    onInput(event: any) {
+        this.setState({ field: event.target.value });
     }
 
     render() {
         return (
             <div className="is-centered">
-                <h1>
-                    Hi {this.props.name} - {this.state.count}
-                </h1>
-                <button
-                    className="button m-t-m"
-                    onClick={(event) => this.sayHello(event)}
-                >
-                    Click me to say Hello!
-                </button>
+                <h1>You&apos;re typing: {this.state.field}</h1>
+                <input
+                    className="input m-t-m"
+                    type="text"
+                    onChange={(event) => this.onInput(event)}
+                />
             </div>
         );
     }
 }
 
-export default Hello;
+export default InputText;

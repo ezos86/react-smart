@@ -3,8 +3,8 @@ import Hello from '../components/Hello.component';
 import '../styles/components/sample.scss';
 
 class Sample extends React.Component<any, any> {
-    constructor() {
-        super({});
+    constructor(props: any) {
+        super(props);
     }
 
     goPage() {

@@ -1,5 +1,5 @@
-# Star Wars Battleship
-This react application provides the front-end for star wars battleship.
+# React Smart Setup
+This react application provides a base template with several starting packages.
 
 # Environment vars
 Database
@@ -50,7 +50,6 @@ The folder structure of this app is explained below:
 ## Variable Control
 Consitency amongst file, function and variable names makes it easier to search the codebase when looking for a file, value, or function. It can quickly be understood based on the case, rather it's a function or variable if we follow these assignment rules.
 
-- *File names* should be in kabob case and include the target file type: ex: hello-world.route.ts or hello-world.controller.ts
-- *Function names* should be in lower camel case: ex: getPredictionData or updateUser
-- *Variable names* should be in snake case: ex: prediction_data or first_name
-- *Components, Views* should be Upper camel case.
+- *File names* should include the target file type: ex: hello-world.view.ts or hello-world.controller.ts
+- *Variable/Function names* should be in lower camel case: ex: getPredictionData or updateUser
+- *Class names* should be Pascal case.

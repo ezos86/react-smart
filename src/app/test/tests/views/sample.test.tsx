@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import Sample from '../../views/Sample.view';
+import Sample from '../../../views/Sample.view';
 
 describe('Login', () => {
     it('Make sure form exists', () => {
