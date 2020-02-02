@@ -8,6 +8,7 @@ import Home from './views/Home.view';
 import Sample from './views/Sample.view';
 import Contact from './views/Contact.view';
 import NoPage from './views/NoPage.view';
+// Styles
 import './styles/base.scss';
 
 const app = (

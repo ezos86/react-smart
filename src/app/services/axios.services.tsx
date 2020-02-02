@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-let base_url = null;
+let baseUrl = null;
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    base_url = 'http://localhost:8001';
+    baseUrl = 'http://localhost:8001';
 } else {
-    base_url = 'http://battleship.smartass.io';
+    baseUrl = 'http://battleship.smartass.io';
 }
 
-var api = axios.create({
-    baseURL: base_url,
+const api = axios.create({
+    baseURL: baseUrl,
     headers: {
         token: localStorage.getItem('token')
     }

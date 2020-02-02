@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "lint": "eslint './src/**/*.{ts,tsx}'",
+    "prettier": "prettier --write '**/*.{ts,tsx,js,css,scss,html}'",
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "./node_modules/.bin/webpack",

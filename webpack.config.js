@@ -33,7 +33,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             query: {
-                                name:'assets/[name].[ext]'
+                                name: 'assets/[name].[ext]'
                             }
                         }
                     },
@@ -57,7 +57,7 @@ module.exports = {
             },
             {
                 enforce: 'pre',
-                test: /\.js$/, 
+                test: /\.js$/,
                 loader: 'source-map-loader'
             }
         ]

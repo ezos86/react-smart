@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 type IProps = {
     [key: string]: any;
-}
+};
 
 type IState = {
-    [key: string]: any
-}
+    [key: string]: any;
+};
 
 class Home extends React.Component<IProps, IState> {
     constructor(props: IProps) {

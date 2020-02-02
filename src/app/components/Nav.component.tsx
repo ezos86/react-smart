@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/login-logo.png';
 
 class Nav extends React.Component<any, {}> {
-    constructor(props: any){
+    constructor(props: any) {
         super(props);
     }
 
@@ -14,7 +14,11 @@ class Nav extends React.Component<any, {}> {
 
     render() {
         return (
-            <div className="navbar" role="navigation" aria-label="main navigation">
+            <div
+                className="navbar"
+                role="navigation"
+                aria-label="main navigation"
+            >
                 <div className="navbar-brand">
                     <img style={{width:'100px'}} src={logo} />
                 </div>
