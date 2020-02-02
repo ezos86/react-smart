@@ -1,0 +1,35 @@
+{
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/@typescript-eslint",
+        "prettier/react",
+        "prettier/standard"
+    ],
+    "plugins": ["standard", "react", "@typescript-eslint", "prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": "off"
+    },
+    "overrides": [
+        {
+          "files": ["*.js"],
+          "rules": {
+            "typescript/no-var-requires": "off"
+          }
+        }
+    ],
+    "env": {
+        "es6": true,
+        "jest": true
+    },    
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "parser": "@typescript-eslint/parser"
+}
