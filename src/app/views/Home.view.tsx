@@ -23,20 +23,22 @@ class Home extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <div className="view-content">
-                {logo}
-                <h1>React Template</h1>
-                <p>Sample Page</p>
-                <div className="is-centered">
-                    <Link to="/sample" className="button">
-                        Goto Sample Page
-                    </Link>
-                    <button
-                        className="button"
-                        onClick={(event) => this.method(event)}
-                    >
-                        Sample Event Button
-                    </button>
+            <div className="view-content columns is-centered">
+                <div className="is-half">
+                    <img style={{ width: '300px' }} src={logo} />
+                    <h1>React Template</h1>
+                    <p className="center-align">Sample Page</p>
+                    <div className="is-centered m-t-m">
+                        <Link to="/sample" className="button block m-b-m">
+                            Goto Sample Page
+                        </Link>
+                        <button
+                            className="button block is-fullwidth"
+                            onClick={(event) => this.method(event)}
+                        >
+                            Sample Event Button
+                        </button>
+                    </div>
                 </div>
             </div>
         );
