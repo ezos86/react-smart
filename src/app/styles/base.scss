@@ -1,4 +1,3 @@
-
 /*
     Name: Star Wars Battleship Base Styles
     Description: Base styles
@@ -6,7 +5,6 @@
 */
 
 @import '_variables.scss';
-
 
 /***************************   CSS META   *****************************
 
@@ -35,11 +33,9 @@ Email: eric@smartass.io
 *******************************  END  *************************************
 /**************************************************************************/
 
-
 /**************************************************************************
 							GLOBAL SETUP
 /**************************************************************************/
-
 
 /*--------------------------- 0.1 - Imports  --------------------------------*/
 
@@ -49,7 +45,11 @@ Email: eric@smartass.io
 /*--------------------------- 0.2 - Mixins & Functions --------------------------------*/
 
 //Mixins
-@mixin transition($transition-property:all, $transition-time:1s, $method:linear) {
+@mixin transition(
+    $transition-property: all,
+    $transition-time: 1s,
+    $method: linear
+) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
     -ms-transition: $transition-property $transition-time $method;
@@ -59,49 +59,63 @@ Email: eric@smartass.io
 
 /*--------------------- 0.3 - Global Font Styles  -------------------------------------*/
 
-h1{
-	font-family: $title-font-family, sans-serif;
-	font-size: 48px;
-	line-height: 54px;
-	font-weight: 600;
-	color:$text-color;
+h1 {
+    font-family: $title-font-family, sans-serif;
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+    color: $text-color;
 }
 
-h2{
-	font-family: $title-font-family, sans-serif;
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 400;
-	color:$text-color;
+h2 {
+    font-family: $title-font-family, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $text-color;
 }
 
-h3{
-	font-family: $title-font-family, sans-serif;
+h3 {
+    font-family: $title-font-family, sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-    color:$text-color;
+    color: $text-color;
 }
 
-h4{
-	font-family: $title-font-family, sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 600;
-	text-transform: uppercase;
-    color:$text-color;
+h4 {
+    font-family: $title-font-family, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $text-color;
 }
 
-p, span, a, div, ul, li, ol, section, article, form, input, textarea, header, footer, aside {
-	font-family: $base-font-family;
-	font-size: 12px;
-	line-height: 16px;
-	font-weight: normal;
-	color:$text-color;
+p,
+span,
+a,
+div,
+ul,
+li,
+ol,
+section,
+article,
+form,
+input,
+textarea,
+header,
+footer,
+aside {
+    font-family: $base-font-family;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: $text-color;
 }
 
-.view-content{
-	padding: 15px;
+.view-content {
+    padding: 15px;
 }
 
 .input-label {
@@ -112,53 +126,50 @@ p, span, a, div, ul, li, ol, section, article, form, input, textarea, header, fo
 
 /*------------------------ 1.1 - Space Helpers ------------------------------------*/
 
-
-.m-t-m{
-	margin-top:20px;
+.m-t-m {
+    margin-top: 20px;
 }
 
-.m-r-s{
-	margin-bottom:10px;
+.m-r-s {
+    margin-bottom: 10px;
 }
 
-.m-b-s{
-	margin-bottom:10px;
+.m-b-s {
+    margin-bottom: 10px;
 }
 
-.m-b-m{
-	margin-bottom:20px;
+.m-b-m {
+    margin-bottom: 20px;
 }
 
-.m-b-xl{
-	margin-bottom:60px;
+.m-b-xl {
+    margin-bottom: 60px;
 }
 
-.center-align{
-	text-align:center;
+.center-align {
+    text-align: center;
 }
 
-
-.game-box{
-	width:100px;
-	border: 1px solid #999;
+.game-box {
+    width: 100px;
+    border: 1px solid #999;
 }
 
-.game-item{
-	margin: 0;
-	padding: 10px 0px;
-	border-bottom: 1px #999 solid;
+.game-item {
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px #999 solid;
 }
 
-.game-item-name{
-	font-size: 16px;
-	padding-left: 0;
+.game-item-name {
+    font-size: 16px;
+    padding-left: 0;
 }
 
-.flex{
-	display: flex;
+.flex {
+    display: flex;
 }
 
-.game-item-button{
-	margin-right: 0;
+.game-item-button {
+    margin-right: 0;
 }
-

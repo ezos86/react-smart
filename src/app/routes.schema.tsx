@@ -2,7 +2,7 @@ const routes = [
     {
         title: 'Get All Users',
         url: 'https://jsonplaceholder.typicode.com/users',
-        method: 'GET',
+        method: 'GET'
     },
     {
         title: 'Get User Data',
@@ -25,18 +25,18 @@ const routes = [
                 name: 'email',
                 type: 'email',
                 max: 24,
-                min: 3,
+                min: 3
             },
             {
                 name: 'full-name',
                 type: 'text',
                 placeholder: 'John Doe',
-                required: true,
+                required: true
             },
             {
                 name: 'phone',
-                type: 'tel',
-            },
+                type: 'tel'
+            }
         ]
     },
     {
@@ -55,18 +55,18 @@ const routes = [
                 name: 'email',
                 type: 'email',
                 max: 24,
-                min: 3,
+                min: 3
             },
             {
                 name: 'full-name',
                 type: 'text',
                 placeholder: 'John Doe',
-                required: true,
+                required: true
             },
             {
                 name: 'phone',
-                type: 'tel',
-            },
+                type: 'tel'
+            }
         ]
     },
     {

@@ -7,7 +7,7 @@ class Nav extends React.Component<any, {}> {
         super(props);
     }
 
-    logout(){
+    logout() {
         localStorage.removeItem('token');
         window.location.href = '/';
     }
@@ -20,16 +20,24 @@ class Nav extends React.Component<any, {}> {
                 aria-label="main navigation"
             >
                 <div className="navbar-brand">
-                    <img style={{width:'100px'}} src={logo} />
+                    <img style={{ width: '100px' }} src={logo} />
                 </div>
                 <div className="navbar-menu">
                     <div className="navbar-end">
-                        <Link to="/games" className="navbar-item">View Games</Link>
-                        <Link to="/contact" className="navbar-item">About Project</Link>
+                        <Link to="/games" className="navbar-item">
+                            View Games
+                        </Link>
+                        <Link to="/contact" className="navbar-item">
+                            About Project
+                        </Link>
                         <div className="navbar-item">
-                            <span className="button is-light" onClick={this.logout.bind(this)}>Logout</span>
+                            <span
+                                className="button is-light"
+                                onClick={this.logout.bind(this)}
+                            >
+                                Logout
+                            </span>
                         </div>
-                        {/* <button className="navbar-item button" onClick={this.logout.bind(this)}>Logout</button> */}
                     </div>
                 </div>
             </div>
