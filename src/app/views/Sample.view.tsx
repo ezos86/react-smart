@@ -13,7 +13,7 @@ class Sample extends React.Component<any, any> {
 
     render() {
         return (
-            <div className="view-content">
+            <div className="sample-page">
                 <h1>Sample Page</h1>
                 <Hello name="Eric" />
                 <button

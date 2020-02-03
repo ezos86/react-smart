@@ -24,7 +24,7 @@ class Hello extends React.Component<Props, State> {
 
     render() {
         return (
-            <div className="is-centered">
+            <div>
                 <h1>
                     Hi {this.props.name} - {this.state.count}
                 </h1>
