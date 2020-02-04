@@ -1,10 +1,10 @@
-declare let module: any;
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ToastContainer } from 'react-toastify';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { createStore, applyMiddleware } from 'redux';
 // Pages
 import Home from './views/Home.view';
 import Sample from './views/Sample.view';
@@ -15,7 +15,15 @@ import './styles/base.scss';
 
 //Store
 import rootReducer from './reducers/index';
-const store = createStore(rootReducer);
+const logger = (store: any) => (next: any) => (action: any) => {
+    console.log(action);
+    console.log(store.getState());
+    next(action);
+};
+const store = createStore(rootReducer, applyMiddleware(logger, thunk));
+store.subscribe(() => {
+    console.log('Store changed', store.getState());
+});
 
 const app = (
     <Provider store={store}>
@@ -35,6 +43,7 @@ const app = (
 
 ReactDOM.render(app, document.getElementById('root'));
 
+declare let module: any;
 if (module.hot) {
     module.hot.accept();
 }

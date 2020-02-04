@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: process.env.NODE_ENV || 'development',
     entry: {
         app: ['./src/app/App.tsx', 'webpack-hot-middleware/client'],
         vendor: ['react', 'react-dom']
@@ -15,6 +15,9 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.ts', '.tsx', '.png']
+    },
+    performance: {
+        hints: process.env.NODE_ENV === 'production' ? "warning" : false
     },
     module: {
         rules: [

@@ -6,7 +6,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="view-content">
-                <div className="view-content">
+                <div className="container">
                     <h2>Eric Cavazos</h2>
                 </div>
                 <InputText />

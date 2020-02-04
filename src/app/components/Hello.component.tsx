@@ -1,13 +1,16 @@
 import * as React from 'react';
+import counter from '../actions/counter.actions';
+import { connect } from 'react-redux';
 
 type Props = {
     name: string;
 };
+
 type State = {
     count: number;
 };
 
-class Hello extends React.Component<Props, State> {
+class Hello extends React.Component<any, State> {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -19,20 +22,18 @@ class Hello extends React.Component<Props, State> {
     sayHello(event: any) {
         console.log(event);
         this.setState({ count: this.state.count + 1 });
-        alert(`Hello  ${this.state.count} ${this.props.name}`);
     }
 
     render() {
         return (
-            <div>
-                <h1>
-                    Hi {this.props.name} - {this.state.count}
-                </h1>
+            <div className="hello-local">
+                <h2>{this.props.name}</h2>
+                <h3>Local State Counter: {this.state.count}</h3>
                 <button
                     className="button m-t-m"
                     onClick={(event) => this.sayHello(event)}
                 >
-                    Click me to say Hello!
+                    Local Hello
                 </button>
             </div>
         );

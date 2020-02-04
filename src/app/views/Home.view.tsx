@@ -24,7 +24,7 @@ class Home extends React.Component<IProps, IState> {
     render() {
         return (
             <div className="view-content columns is-centered">
-                <div className="is-half">
+                <div className="is-half center-align">
                     <img style={{ width: '300px' }} src={logo} />
                     <h1>React Template</h1>
                     <p className="center-align">Sample Page</p>

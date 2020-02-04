@@ -153,3 +153,10 @@ aside {
 .block{
     display: block;
 }
+
+.sample-page {
+    .box{
+        margin-bottom: 0 !important;
+        height:100%;
+    }
+}

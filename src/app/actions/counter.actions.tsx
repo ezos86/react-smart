@@ -1,13 +1,19 @@
-export function increment() {
-   return {
-      type: 'INCREMENT'
-   }
-}
-export function decrement() {
-   return {
-      type: 'DECREMENT'
-   }
-}
-export function reset() {
-   return { type: 'RESET' }
-}
+const counter = {
+    increment: () => {
+        return {
+            type: 'INCREMENT'
+        };
+    },
+    decrement: () => {
+        return {
+            type: 'DECREMENT'
+        };
+    },
+    reset: () => {
+        return {
+            type: 'RESET'
+        };
+    }
+};
+
+export default counter;

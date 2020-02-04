@@ -25,6 +25,7 @@ class InputText extends React.Component<Props, State> {
                 <input
                     className="input m-t-m"
                     type="text"
+                    placeholder="Your Text"
                     onChange={(event) => this.onInput(event)}
                 />
             </div>
